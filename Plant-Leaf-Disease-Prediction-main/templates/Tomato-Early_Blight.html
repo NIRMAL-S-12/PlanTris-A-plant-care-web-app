@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>LEAF DISEASE PREDICTION</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        h6{
+            font-size: 20px;
+            font-style:oblique;
+        }
+		
+    </style>
+</head>
+
+<body background="{{url_for('static',filename = 'images/Back.jpg')}}">
+
+
+
+    <div>
+        <h1 style="text-align:center;font-size:4rem">Recognize plant illnesses and get the healing        </h1>
+    </div>
+
+   <br>
+   <br>
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{url_for('static',filename = 'images/Tomato___Early_blight.JPG' )}}" alt="User Image" style="width:500px;height:500px;">
+                    
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(15, 15, 15); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+					
+					<h4><b> Treatment : </b> </h4>
+                    <h6>
+
+
+                        
+                        Early blight disease is a common fungal disease that affects tomato plants. It usually starts as small brown spots on the lower leaves of the plant and can spread to the upper leaves if left untreated. Fortunately, there are several remedies that you can try to control early blight disease in your tomato plants:
+
+                        <hr><b>1: </b>Remove infected leaves: As soon as you notice any signs of early blight, remove the affected leaves and dispose of them immediately. This will help prevent the spread of the disease.
+                        
+                        <hr><b>2: </b>Mulch: Mulching around the base of the tomato plants can help prevent the soil from splashing onto the leaves and spreading the fungal spores. You can use a layer of straw, grass clippings, or shredded leaves for mulching.
+                        
+                        <hr><b>3: </b>Water at the base: Watering your tomato plants at the base instead of from above can help prevent the spread of the fungal spores. This will also help prevent the leaves from getting wet, which can promote the growth of the fungus.
+                        
+                        <hr><b>4: </b>Neem oil: Neem oil is a natural fungicide that can help control early blight disease. Mix one tablespoon of neem oil with one gallon of water and spray the solution on the tomato plants, focusing on the lower leaves.
+                        
+                        <hr><b>5: </b>Baking soda: Baking soda is another natural remedy that can help control early blight disease. Mix one tablespoon of baking soda with one gallon of water and spray the solution on the tomato plants, focusing on the lower leaves.
+                        
+                        Remember to always read the label and follow the instructions carefully when using any fungicide or pesticide on your tomato plants.
+                        
+                        
+                        
+                        
+                        </br></br>
+                        
+
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
